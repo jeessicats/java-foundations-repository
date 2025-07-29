@@ -15,4 +15,15 @@ public enum Rank {
     JACK,
     QUEEN,
     KING;
+
+    public int getValue() {
+        if (this == Rank.KING || this == Rank.QUEEN || this == Rank.JACK) {
+            return 10;
+        } else if (this == Rank.ACE) {
+            return 11; // Default value for ACE
+        } else {
+            return ordinal() + 1;
+        }
+    }
 }
+

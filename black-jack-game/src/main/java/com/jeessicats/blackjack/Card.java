@@ -40,7 +40,11 @@ public class Card {
     public static void main(String[] args) {
         Card heartAce = new Card(Suit.CLUBS, Rank.ACE);
         Card diamondKing = new Card(Suit.DIAMONDS, Rank.KING);
-
-
     }
+
+    public int getValue() {
+        return this.rank.getValue();
+    }
+
+
 }
